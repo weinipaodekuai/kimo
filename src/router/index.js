@@ -1,5 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import Login from '@/components/page/Login';   //登录页面
+import Forget from '@/components/page/Forget';   //忘记密码页面
+import Success from '@/components/page/Success';   //成功页面
 import home from '@/components/page/home';   //后台首页》基础信息
 import accountSafe from '@/components/page/accountSafe';   //后台首页》账户安全页面
 import accountSafeSuc from '@/components/page/accountSafeSuc';   //后台首页》账户安全》成功页面
@@ -24,6 +27,18 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Login',
+      component: Login
+    },{
+      path: '/Forget',
+      name: 'Forget',
+      component: Forget
+    },{
+      path: '/Success',
+      name: 'Success',
+      component: Success
+    },{
+      path: '/home',
       name: 'home',
       component: home
     },{
